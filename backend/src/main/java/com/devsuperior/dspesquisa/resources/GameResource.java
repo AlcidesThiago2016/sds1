@@ -19,8 +19,9 @@ public class GameResource {
 	private GameService service;
 	
 	@GetMapping
-	public ResponseEntity<List<GameDTO>> findAll(){
+	public ResponseEntity<List<GameDTO>> findAll() {
 		List<GameDTO> list = service.findall();
 		return ResponseEntity.ok().body(list);
+
 	}
 }
